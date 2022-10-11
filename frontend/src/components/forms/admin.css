@@ -1,0 +1,43 @@
+.box {
+  /* background-color: red; */
+  /*  padding: 0 !important; */
+  margin: 0 !important;
+  height: fit-content;
+}
+.field select {
+  flex: 1;
+  outline: none;
+  border: none;
+  background-color: #f5f3f3;
+  border-radius: 10px;
+  width: 220px;
+  font-size: 0.7rem;
+  padding: 8px 30px 8px 15px;
+}
+.admin-f {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.admin-f .left-i {
+  border-right: 1px solid rgb(234, 234, 234);
+  /* background-color: rgb(244, 244, 244); */
+}
+@media only screen and (max-width: 950px) {
+  .left-i {
+    display: none;
+  }
+  .container {
+    width: fit-content;
+    height: 40vh !important;
+    background-color: transparent !important;
+  }
+  .dis {
+    padding: 5vh 25px;
+  }
+  form {
+    padding: 30px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+  }
+}

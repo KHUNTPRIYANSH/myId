@@ -1,0 +1,23 @@
+.l-form .left-i {
+  border-right: 1px solid rgb(234, 234, 234);
+}
+.l-form {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 430px) {
+  .left-i {
+    display: none;
+  }
+
+  .dis {
+    padding: 5vh 25px;
+  }
+  form {
+    padding: 30px 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px 5px #407cff65;
+    border-radius: 30px;
+  }
+}

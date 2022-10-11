@@ -1,0 +1,138 @@
+.t-box {
+  height: auto;
+  width: 100vw;
+  padding: 0 10vw;
+  padding-bottom: 10vh;
+}
+table {
+  border: 1px #8685a3 solid;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th {
+  text-align: left;
+}
+
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #8d2de2ca;
+  background: linear-gradient(to right, #4b00e0e0, #8d2de2e0);
+}
+/* tbody tr:hover td {
+    background-color: rgb(240, 240, 240);
+  }
+  tbody tr:hover .pd {
+    background-color: rgb(238, 218, 100) !important;
+  }
+  tbody tr:hover .ap {
+    background-color: rgb(144, 236, 98) !important;
+  } */
+td,
+th {
+  padding: 1em 0.5em;
+  vertical-align: middle;
+}
+
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: 0.3s;
+}
+
+a {
+  color: #5f5d73;
+}
+.pd {
+  background-color: rgb(255, 236, 127) !important;
+}
+.ap {
+  background-color: rgb(164, 255, 119) !important;
+}
+@media all and (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    text-align: right;
+  }
+
+  table {
+    position: relative;
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  thead {
+    float: left;
+    white-space: nowrap;
+  }
+
+  tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  th {
+    border-bottom: 1px solid #8785a3;
+  }
+
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+.filter {
+  background: rgb(245, 245, 245);
+  width: auto;
+  height: auto;
+  padding: 12px;
+  margin-bottom: 15px;
+  overflow: hidden !important;
+  border-radius: 7px;
+  border: 1px solid rgb(183, 183, 183);
+  overflow-x: scroll;
+}
+.fil-title {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.hid-sec {
+  display: flex;
+  width: 100%;
+  /* height: auto; */
+  margin-top: 15px;
+  height: auto;
+  transition: ease-in-out 0.3s;
+  gap: 7px;
+  overflow-x: scroll;
+  /* flex-direction: column; */
+}
+.hid-sec button {
+  background: white;
+  /* border: none; */
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 0.8rem;
+  /* border: 1px solid rgb(183, 183, 183) !important; */
+  padding: 5px 20px;
+}
